@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+ 
+<html lang="en">
+ 
+  <head>
+    <title>What's in an Input?</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <link href="https://fonts.googleapis.com/css?family=Chewy|Patrick+Hand" rel="stylesheet">
+  </head>
+ 
+  <body>
+    <div class="container">
+      <form name="myform" id="myform" method="get">
+      <div class="row">
+        <div class="colu"><h1>Type</h1></div>
+        <div class="col"><h1>Control</h1></div>
+        <div class="col"><h1>Mirror</h1></div>
+        <div class="colu"><h1>Value</h1></div>
+      </div>
+ 
+      <div class="row">
+        <div class="colu"><p>Checkbox</p></div>
+        <div class="col"><p><input type="checkbox" name="mycheckbox" id="mycheckbox">Math is Cool</p></div>
+        <div class="col"><p><input type="checkbox" name="mycheckbox2" id="mycheckbox2">So is Science</p></div>
+        <div class="colu" id="mychckbx"></div>
+      </div>
+ 
+      <div class="row">
+        <div class="colu"><p>Color</p></div>
+        <div class="col"><input type="color" name="mycolor" id="mycolor" value="#de056c"></div>
+        <div class="col"><input type="color" name="mycolor2" id="mycolor2"></div>
+        <div class="colu" id="myclr"></div>
+      </div>
+ 
+      <div class="row">
+        <div class="colu"><p>DataList</p></div>
+        <div class="col"><input list="sciences" name="myinputs" id="mydatalist" value="Chemistry"><datalist id="sciences"><option value="Chemistry"><option value="Physics"><option value="Botany"></datalist></div>
+        <div class="col"><input list="sciences2" name="myinputs2" id="mydatalist2"><datalist id="sciences2"><option value="Chemistry"><option value="Physics"><option value="Botany"></datalist></div>
+        <div class="colu" id="mydtlst"></div>
+      </div>
+ 
+      <div class="row">
+        <div class="colu"><p>Date</p></div>
+        <div class="col"><input type="date" name="mydate" id="mydate" value="2012-12-21"></div>
+        <div class="col"><input type="date" name="mydate2" id="mydate2"></div>
+        <div class="colu" id="mydt"></div>
+      </div>
+ 
+      <div class="row">
+        <div class="colu"><p>Date & Time</p></div>
+        <div class="col"><input type="datetime-local" name="mydatetime" id="mydatetime" value="2017-04-22T12:00"></div>
+        <div class="col"><input type="datetime-local" name="mydatetime2" id="mydatetime2"></div>
+        <div class="colu" id="mydttm"></div>
+      </div>
+ 
+      <div class="row">
+        <div class="colu"><p>Email</p></div>
+        <div class="col"><input type="email" name="myemail" id="myemail" value="evenmore@examples.com"></div>
+        <div class="col"><input type="email" name="myemail2" id="myemail2"></div>
+        <div class="colu" id="myeml"></div>
+      </div>
+ 
+      <div class="row">
+        <div class="colu"><p>File Upload</p></div>
+        <div class="col" id="fileclone"><input type="file" name="myfile" id="myfile"></div>
+        <div class="col" id="fileclone2"></div>
+        <div class="colu" id="myfle"></div>
+      </div>
+ 
+      <div class="row">
+        <div class="colu"><p>Month</p></div>
+        <div class="col"><input type="month" name="mymonth" id="mymonth" value="2011-05"></div>
+        <div class="col"><input type="month" name="mymonth2" id="mymonth2"></div>
+        <div class="colu" id="mymnth"></div>
+      </div>
+ 
+      <div class="row">
+        <div class="colu"><p>Number</p></div>
+        <div class="col"><input type="number" name="mynumber" id="mynumber" step="any" value="3.14159265359"></div>
+        <div class="col"><input type="number" name="mynumber2" id="mynumber2" step="any"></div>
+        <div class="colu" id="mynmbr"></div>
+      </div>
+ 
+      <div class="row">
+        <div class="colu"><p>Password</p></div>
+        <div class="col"><input type="password" name="mypassword" id="mypassword" value="therearenosecretsinlife"></div>
+        <div class="col"><input type="password" name="mypassword2" id="mypassword2"></div>
+        <div class="colu" id="mypsswrd"></div>
+      </div>
+ 
+      <div class="row">
+        <div class="colu"><p>Radio</p></div>
+        <div class="col"><p><input type="radio" name="myradio" id="myradio1" value="Algebra">Algebra</p><p><input type="radio" id="myradio2" name="myradio" value="Calculus">Calculus</p><p><input type="radio" name="myradio" id="myradio3" value="Trigonometry" checked>Trigonometry</p></div>
+        <div class="col"><p><input type="radio" name="myradio2" id="myradio21" value="Algebra">Algebra</p><p><input type="radio" id="myradio22" name="myradio2" value="Calculus">Calculus</p><p><input type="radio" name="myradio2" id="myradio23" value="Trigonometry">Trigonometry</p></div>
+        <div class="colu" id="myrdio"></div>
+      </div>
+ 
+      <div class="row">
+        <div class="colu"><p>Range</p></div>
+        <div class="col"><input type="range" name="myrange" min="0" max="14" value="7" id="myrange"></div>
+        <div class="col"><input type="range" name="myrange2" min="0" max="14" value="7" id="myrange2"></div>
+        <div class="colu" id="myrnge"></div>
+      </div>
+ 
+      <div class="row">
+        <div class="colu"><p>Search</p></div>
+        <div class="col"><input type="search" name="mysearch" id="mysearch" value="PH Range"></div>
+        <div class="col"><input type="search" name="mysearch2" id="mysearch2"></div>
+        <div class="colu" id="mysrch"></div>
+      </div>
+ 
+      <div class="row">
+        <div class="colu"><p>Select</p></div>
+        <div class="col"><select name="myselect" id="myselect" size="3" multiple><option id="myoption1" value="Javascript">Javascript</option><option id="myoption2" value="PHP" selected>PHP</option><option id="myoption3" value="C#">C#</option></select></div>
+        <div class="col"><select name="myselect2" id="myselect2" size="3" multiple><option id="myoption21" value="Javascript">Javascript</option><option id="myoption22" value="PHP">PHP</option><option id="myoption23" value="C#">C#</option></select></div>
+        <div class="colu" id="myslct"></div>
+      </div>
+ 
+      <div class="row">
+        <div class="colu"><p>Telephone</p></div>
+        <div class="col"><input type="tel" name="mytel" id="mytel" value="202-326-6417"></div>
+        <div class="col"><input type="tel" name="mytel2" id="mytel2"></div>
+        <div class="colu" id="mytlphn"></div>
+      </div>
+ 
+      <div class="row">
+        <div class="colu"><p>Text</p></div>
+        <div class="col"><input type="text" name="mytext" id="mytext" value="Bill Nye"></div>
+        <div class="col"><input type="text" name="mytext2" id="mytext2"></div>
+        <div class="colu" id="mytxt"></div>
+      </div>
+ 
+      <div class="row">
+        <div class="colu"><p>TextArea</p></div>
+        <div class="col"><textarea id="mytextarea">The Science Guy!</textarea></div>
+        <div class="col"><textarea id="mytextarea2"></textarea></div>
+        <div class="colu" id="mytxtarea"></div>
+      </div>
+ 
+      <div class="row">
+        <div class="colu"><p>Time</p></div>
+        <div class="col"><input type="time" name="mytime" id="mytime" value="16:20"></div>
+        <div class="col"><input type="time" name="mytime2" id="mytime2"></div>
+        <div class="colu" id="mytme"></div>
+      </div>
+ 
+      <div class="row">
+        <div class="colu"><p>URL</p></div>
+        <div class="col"><input type="url" name="myurl" id="myurl" value="www.missellepope.com"></div>
+        <div class="col"><input type="url" name="myurl2" id="myurl2"></div>
+        <div class="colu" id="myvrl"></div>
+      </div>
+ 
+      <div class="row">
+        <div class="colu"><p>Week</p></div>
+        <div class="col"><input type="week" name="myweek" id="myweek" value="1969-W29"></div>
+        <div class="col"><input type="week" name="myweek2" id="myweek2"></div>
+        <div class="colu" id="mywk"></div>
+      </div>
+      </form>
+    </div>
+ 
+    <script type='text/javascript' src='http://ajax.googleapis.com/ajax/libs/jquery/1.6.4/jquery.min.js'></script>
+    <script src="script.js"></script>   
+  </body>
+ 
+</html>

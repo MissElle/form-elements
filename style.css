@@ -1,0 +1,182 @@
+/* What's that Input? style.css */
+ 
+/*--------------------------------------------------------------------------------------*/
+ 
+/*This is the css for the responsive grid*/
+ 
+.container {
+  width: 80%;
+  margin: 1em auto;
+}
+ 
+* {
+  margin: 0 auto;
+  padding: 0;
+  box-sizing: border-box;
+  }
+ 
+div.row {
+  width: 100%;
+  margin: auto;
+  clear: both;
+}
+ 
+div.row:after {
+  content: "";
+  display: block;
+  clear: both;
+}
+ 
+div.col {
+  float: left;
+  width: 29%;
+  margin: 1% .5%;
+}
+ 
+div.colu {
+  float: left;
+  width: 19%;
+  margin: 1% .5%;
+}
+ 
+/*--------------------------------------------------------------------------------------*/
+/*This is pure styling, no layout*/
+ 
+html {
+  background-image: url("https://cdn.pixabay.com/photo/2014/03/25/15/23/flask-296663_960_720.png");
+  background-size: 67em;
+  background-position: 38vw 5vh;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+}
+ 
+h1 {font-family: 'Chewy', cursive; font-weight: 100; font-size: 1.5em;}
+.left{text-align: left;}
+ 
+/*Base stylings for all inputs*/
+ 
+div, p, input, textarea, datalist, option {font-family: 'Patrick Hand', cursive; font-size: 1.1em;}
+option {font-size: 1.7em;}
+ 
+input, select, textarea {
+  width: 90%;
+  max-width: 90%;
+  border-radius: .5em;
+  border: .1em solid #1cbeff;
+  padding: 0 0.3em;
+  text-align: left;
+  overflow: visible;
+}
+ 
+input:hover, select:hover, textarea:hover {background-color: #c6c6c6; opacity: .5;}
+input:focus, select:focus, textarea:focus {background-color: #ffffff; opacity: 1; box-shadow: 0 0 1em .1em #4fccff;}
+ 
+/*extended stylings for inputs------------------------------------------------------------*/
+ 
+select {border-width: .2em; border-radius: 1.3em;}
+select:hover {background-color: #ffffff; opacity: 1;}
+select:focus {}
+textarea{max-height: 1.6em;}
+input[type=radio], input[type=checkbox] {width: 10%; padding: 0;}
+input[type=radio]:focus, input[type=checkbox]:focus {box-shadow: none;}
+input[type=file] {border: 0 none;}
+option:hover {background-color: #cefcff; overflow: hidden;}
+ 
+input[type=range]:hover{opacity: 1; background-color: transparent;}
+input[type=range]:focus{box-shadow: none;}
+input[type=range] {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  border: none;
+  width: 100%;
+}
+ 
+input[type=range]::-webkit-slider-runnable-track {
+ background-color: #5a1687;
+  background: -webkit-linear-gradient(left, #db1818, #db5c18, #e89511, #e8e412, #badb18, #89db18, #65db18, #35db18, #18db6f, #18dbd4, #18addb, #283cd3, #5b28d3, #6f28d3, #5a1687);
+  background: -o-linear-gradient(right, #db1818, #db5c18, #e89511, #e8e412, #badb18, #89db18, #65db18, #35db18, #18db6f, #18dbd4, #18addb, #283cd3, #5b28d3, #6f28d3, #5a1687);
+  background: -moz-linear-gradient(right, #db1818, #db5c18, #e89511, #e8e412, #badb18, #89db18, #65db18, #35db18, #18db6f, #18dbd4, #18addb, #283cd3, #5b28d3, #6f28d3, #5a1687);
+  background: linear-gradient(to right, #db1818, #db5c18, #e89511, #e8e412, #badb18, #89db18, #65db18, #35db18, #18db6f, #18dbd4, #18addb, #283cd3, #5b28d3, #6f28d3, #5a1687);
+  border-radius: .5em;
+  border: .2em solid #ffc6ef;
+  height: .9em;
+}
+ 
+input[type=range]::-moz-range-track {
+  background-color: #5a1687;
+  background: -webkit-linear-gradient(left, #db1818, #db5c18, #e89511, #e8e412, #badb18, #89db18, #65db18, #35db18, #18db6f, #18dbd4, #18addb, #283cd3, #5b28d3, #6f28d3, #5a1687);
+  background: -o-linear-gradient(right, #db1818, #db5c18, #e89511, #e8e412, #badb18, #89db18, #65db18, #35db18, #18db6f, #18dbd4, #18addb, #283cd3, #5b28d3, #6f28d3, #5a1687);
+  background: -moz-linear-gradient(right, #db1818, #db5c18, #e89511, #e8e412, #badb18, #89db18, #65db18, #35db18, #18db6f, #18dbd4, #18addb, #283cd3, #5b28d3, #6f28d3, #5a1687);
+  background: linear-gradient(to right, #db1818, #db5c18, #e89511, #e8e412, #badb18, #89db18, #65db18, #35db18, #18db6f, #18dbd4, #18addb, #283cd3, #5b28d3, #6f28d3, #5a1687);
+  border-radius: .5em;
+  border: .2em solid #ffc6ef;
+  height: .9em;
+}
+ 
+input[type=range]::-ms-track {
+  background-color: #5a1687;
+  background: -webkit-linear-gradient(left, #db1818, #db5c18, #e89511, #e8e412, #badb18, #89db18, #65db18, #35db18, #18db6f, #18dbd4, #18addb, #283cd3, #5b28d3, #6f28d3, #5a1687);
+  background: -o-linear-gradient(right, #db1818, #db5c18, #e89511, #e8e412, #badb18, #89db18, #65db18, #35db18, #18db6f, #18dbd4, #18addb, #283cd3, #5b28d3, #6f28d3, #5a1687);
+  background: -moz-linear-gradient(right, #db1818, #db5c18, #e89511, #e8e412, #badb18, #89db18, #65db18, #35db18, #18db6f, #18dbd4, #18addb, #283cd3, #5b28d3, #6f28d3, #5a1687);
+  background: linear-gradient(to right, #db1818, #db5c18, #e89511, #e8e412, #badb18, #89db18, #65db18, #35db18, #18db6f, #18dbd4, #18addb, #283cd3, #5b28d3, #6f28d3, #5a1687);
+  border-radius: .5em;
+  border: .2em solid #ffc6ef;
+  height: .9em;
+}
+ 
+input[type=range]::-webkit-slider-thumb {
+  box-shadow: .1em .1em .5em rgba(0, 0, 0, 0.5), 0 0 .1em rgba(13, 13, 13, 0.5);
+  border: .2em solid #623ac4;
+  border-radius: 25em;
+  background-color: #130b77;
+  color: #130b77;
+  cursor: pointer;
+  margin-top: -.3em;
+  opacity: .8;
+  height: 1em;
+  width: 1em;
+}
+ 
+input[type=range]::-moz-range-thumb {
+  box-shadow: 1.5px 1.5px 4.5px rgba(0, 0, 0, 0.5), 0px 0px 1.5px rgba(13, 13, 13, 0.5);
+  border: .2em solid #623ac4;
+  border-radius: 25em;
+  background-color: rgba(104, 133, 249, 0.70);
+  background-color: #130b77;
+  cursor: pointer;
+  margin-top: -.3em;
+  opacity: .8;
+  height: 1em;
+  width: 1em;
+}
+ 
+input[type=range]::-ms-thumb {
+  box-shadow: 1.5px 1.5px 4.5px rgba(0, 0, 0, 0.5), 0px 0px 1.5px rgba(13, 13, 13, 0.5);
+  border: .2em solid #623ac4;
+  border-radius: 25em;
+  background-color: rgba(104, 133, 249, 0.70);
+  background-color: #130b77;
+  cursor: pointer;
+  margin-top: -.3em;
+  opacity: .8;
+  height: 1em;
+  width: 1em;
+}
+ 
+/*--------------------------------------------------------------------------------------*/
+/*For different browser sizes to control formatting*/
+ 
+@media all and (max-width: 49em) {
+  div, p, input, textarea {font-size: 1em;}
+  select{font-size: .6em;}
+  html {background-position: 17vw 5vh;}
+}
+ 
+@media all and (max-width: 35em) {
+  html {background-position: -10vw 5vh;}
+}
+ 
+@media all and (max-width: 25em) {
+  html{background-position: -22vw 5vh;}
+}
