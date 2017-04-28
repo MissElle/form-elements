@@ -43,7 +43,7 @@ div.colu {
 /*This is pure styling, no layout*/
  
 html {
-  background-image: url("https://cdn.pixabay.com/photo/2014/03/25/15/23/flask-296663_960_720.png");
+  background-image: url("flask.png");
   background-size: 67em;
   background-position: 38vw 5vh;
   background-repeat: no-repeat;
