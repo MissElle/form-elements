@@ -16,7 +16,7 @@ function getValues() {
   $('#mymnth').text($('#mymonth').val());
   $('#mynmbr').text($('#mynumber').val());
   $('#mypsswrd').text($('#mypassword').val());
-  $('#myrdio').text($('input[#myradio]:checked').val());
+  $('#myrdio').text($('#myradio option:checked').val());
   $('#myrnge').text($('#myrange').val());
   $('#mysrch').text($('#mysearch').val());
   $('#myslct').text($('#myselect option:selected').val());
@@ -79,5 +79,6 @@ function getValues() {
 //The first handler loads the initial values after the page is laid out,
 //The second handler updates the form everytime there's a change
  
-$('script').load(getValues);
-$('#myform').change(getValues);
+
+$('document').ready(getValues);
+$('form').change(getValues);
