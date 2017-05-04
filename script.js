@@ -16,7 +16,7 @@ function getValues() {
   $('#mymnth').text($('#mymonth').val());
   $('#mynmbr').text($('#mynumber').val());
   $('#mypsswrd').text($('#mypassword').val());
-  $('#myrdio').text($('#myradio option:checked').val());
+  $('#myrdio').text($('input:radio[name=myradio]:checked').val());
   $('#myrnge').text($('#myrange').val());
   $('#mysrch').text($('#mysearch').val());
   $('#myslct').text($('#myselect option:selected').val());
@@ -31,9 +31,12 @@ function getValues() {
  
 //This pulls the values from the original inputs and mirrors them
   
-  if ($('#mycheckbox').is(':checked')) {
+  if ($('#mycheckbox').prop('checked')) {
     $('#mycheckbox2').prop('checked', true);
-  }else {
+  } else if($('#mycheckbox2').prop('checked')){
+    $('#mycheckbox').prop('checked', true);
+  } else {
+    $('#mycheckbox').prop('checked', false);
     $('#mycheckbox2').prop('checked', false);
   }
   $('#mycolor2').val($('#mycolor').val());
@@ -42,17 +45,17 @@ function getValues() {
   $('#mydatetime2').val($('#mydatetime').val());
   $('#myemail2').val($('#myemail').val());
   $('#fileclone2').html($('#fileclone').html());
-//  $('#fileclone').clone().appendTo($('#fileclone2').html());
+//  $('#fileclone').clone().appendTo($('#fileclone2').html()); - no way to mimic filepaths
   $('#mymonth2').val($('#mymonth').val());
   $('#mynumber2').val($('#mynumber').val());
   $('#mypassword2').val($('#mypassword').val());
- 
+    
   for(var i=0; i<3; i++) {
     if($('input[name=myradio]').eq(i).is(':checked')) {
       $('input[name=myradio2]').eq(i).prop('checked', true);
     }else {
       $('input[name=myradio2]').eq(i).prop('checked', false);
-    }
+   }
   }
  
   $('#myrange2').val($('#myrange').val());
