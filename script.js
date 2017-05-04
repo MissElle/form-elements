@@ -33,10 +33,7 @@ function getValues() {
   
   if ($('#mycheckbox').prop('checked')) {
     $('#mycheckbox2').prop('checked', true);
-  } else if($('#mycheckbox2').prop('checked')){
-    $('#mycheckbox').prop('checked', true);
   } else {
-    $('#mycheckbox').prop('checked', false);
     $('#mycheckbox2').prop('checked', false);
   }
   $('#mycolor2').val($('#mycolor').val());
